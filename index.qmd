@@ -5,6 +5,12 @@ format:
     code-fold: true
 jupyter: python3
 ---
+## Render time
+```{python}
+import datetime
+print(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+```
+
 ## Python Version
 ```{python}
 import sys
