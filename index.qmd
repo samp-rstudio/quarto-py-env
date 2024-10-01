@@ -1,5 +1,7 @@
 ---
 title: "Python Environment"
+execute:
+  echo: false
 format:
   html:
     code-fold: false
