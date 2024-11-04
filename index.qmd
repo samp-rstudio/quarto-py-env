@@ -7,10 +7,19 @@ format:
     code-fold: false
 jupyter: python3
 ---
+Sleep {{< env SLEEP >}} is set.
+
 ## Render time
 ```{python}
 import datetime
-print(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+import os
+import time
+before = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+print(f"Start: {before}")
+sleep = os.environ.get("SLEEP", "0")
+time.sleep(int(sleep))
+after = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+print(f"Slept for {sleep} until: {after}")
 ```
 
 ## Python Version
