@@ -7,7 +7,6 @@ format:
     code-fold: false
 jupyter: python3
 ---
-Sleep {{< env SLEEP >}} is set.
 
 ## Render time
 ```{python}
